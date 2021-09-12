@@ -1,8 +1,8 @@
-# Adaptive Transformers  in RL
+# Adaptive attention span Transformer for  Reinforcment Learning
 
-Official implementation of [Adaptive Transformers in RL](http://arxiv.org/abs/2004.03761)
+Build based on [Adaptive Transformers in RL](http://arxiv.org/abs/2004.03761)
 
-In this work we replicate several results from [Stabilizing Transformers for RL](https://arxiv.org/abs/1910.06764) on both [Pong](https://gym.openai.com/envs/Pong-v0/) and [rooms_select_nonmatching_object](https://github.com/deepmind/lab/tree/master/game_scripts/levels/contributed/dmlab30#select-non-matching-object) from DMLab30. 
+We replicate several results from [Stabilizing Transformers for RL](https://arxiv.org/abs/1910.06764) on both [Pong](https://gym.openai.com/envs/Pong-v0/) and [rooms_select_nonmatching_object](https://github.com/deepmind/lab/tree/master/game_scripts/levels/contributed/dmlab30#select-non-matching-object) from DMLab30. 
 
 We also extend the Stable Transformer architecture with [Adaptive Attention Span](https://arxiv.org/abs/1905.07799) on a partially observable (POMDP) setting of Reinforcement Learning. To our knowledge this is one of the first attempts to stabilize and explore Adaptive Attention Span in an RL domain.
 
@@ -48,15 +48,3 @@ python train.py --total_steps 20000000 \
 --num_actors 32 --num_learner_threads 1 --sleep_length 20 \
 --level_name rooms_select_nonmatching_object  --mem_len 200
 ```
-
-### Reference
-If you find this repository useful, do cite it with,
-```
-@article{kumar2020adaptive,
-    title={Adaptive Transformers in RL},
-    author={Shakti Kumar and Jerrod Parker and Panteha Naderian},
-    year={2020},
-    eprint={2004.03761},
-    archivePrefix={arXiv},
-    primaryClass={cs.LG}
-}
